@@ -1,0 +1,7 @@
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\bin\x64\Release\SyncTool.exe
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\obj\x64\Release\ResolveAssemblyReference.cache
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\obj\x64\Release\SyncTool.Form1.resources
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\obj\x64\Release\SyncTool.Properties.Resources.resources
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\obj\x64\Release\ResGen.read.1.tlog
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\obj\x64\Release\ResGen.write.1.tlog
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\obj\x64\Release\SyncTool.exe

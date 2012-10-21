@@ -1,0 +1,1 @@
+SyncTool.exe /silent

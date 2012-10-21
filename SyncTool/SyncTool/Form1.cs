@@ -58,13 +58,13 @@ namespace SyncTool
                     lvi.SubItems.Add(slot[2]);
                 }
             }
-            if (Environment.GetCommandLineArgs().Length == 2 && Environment.GetCommandLineArgs()[1] == "/silent")
+            if (Environment.GetCommandLineArgs().ToList<string>().Contains("/silent"))
             {
                 if (!checkBox1.Checked)
                     Application.Exit();
                 foreach (ListViewItem lvi in listView1.Items)
                 {
-                    if (lvi.SubItems[0].Text == "Ordner")
+                    if (lvi.SubItems[0].Text == "Folder")
                     {
                         SyncFolderObject s = new SyncFolderObject();
                         s.f1 = lvi.SubItems[1].Text;
@@ -84,7 +84,8 @@ namespace SyncTool
                     }
                 }
                 button4.Text = "Stop Service";
-                this.Hide();
+                this.Opacity = 0;
+                this.ShowInTaskbar = false;
             }
         }
 
@@ -180,7 +181,8 @@ namespace SyncTool
                 notifyIcon1.BalloonTipText = "Synchronizing started!";
                 notifyIcon1.ShowBalloonTip(1000);
                 button4.Text = "Stop Service";
-                this.Hide();
+                this.Opacity = 0;
+                this.ShowInTaskbar = false;
             }
             else {
                 foreach (Object sync in syncs)
@@ -203,12 +205,14 @@ namespace SyncTool
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
-            this.Hide();
+            this.Opacity = 0;
+            this.ShowInTaskbar = false;
         }
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            this.Show();
+            this.Opacity = 1;
+            this.ShowInTaskbar = true;
         }
 
         private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
