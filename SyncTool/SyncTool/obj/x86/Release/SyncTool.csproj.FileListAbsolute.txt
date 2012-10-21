@@ -16,3 +16,12 @@ C:\Users\Paul\Documents\Visual Studio 2010\Projects\SyncTool2\SyncTool\obj\x86\R
 C:\Users\Paul\Documents\Visual Studio 2010\Projects\SyncTool2\SyncTool\obj\x86\Release\SyncTool.Properties.Resources.resources
 C:\Users\Paul\Documents\Visual Studio 2010\Projects\SyncTool2\SyncTool\obj\x86\Release\ResGen.read.1.tlog
 C:\Users\Paul\Documents\Visual Studio 2010\Projects\SyncTool2\SyncTool\obj\x86\Release\ResGen.write.1.tlog
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\obj\x86\Release\SyncTool.exe
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\obj\x86\Release\SyncTool.pdb
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\bin\Release\SyncTool.exe
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\bin\Release\SyncTool.pdb
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\obj\x86\Release\SyncTool.Form1.resources
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\obj\x86\Release\SyncTool.Properties.Resources.resources
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\obj\x86\Release\ResGen.read.1.tlog
+C:\Users\Paul\Documents\GitHub\SyncTool\SyncTool\SyncTool\obj\x86\Release\ResGen.write.1.tlog

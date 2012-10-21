@@ -70,12 +70,12 @@
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Quelle";
+            this.columnHeader2.Text = "Source";
             this.columnHeader2.Width = 250;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Ziel";
+            this.columnHeader3.Text = "Target";
             this.columnHeader3.Width = 287;
             // 
             // label1
@@ -83,17 +83,17 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
+            this.label1.Size = new System.Drawing.Size(50, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Hinzufügen:";
+            this.label1.Text = "Add Slot:";
             // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Datei",
-            "Ordner"});
+            "File",
+            "Folder"});
             this.comboBox1.Location = new System.Drawing.Point(83, 10);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
@@ -105,7 +105,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Quelle";
+            this.button1.Text = "Source";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_2);
             // 
@@ -115,7 +115,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
-            this.button2.Text = "Ziel";
+            this.button2.Text = "Target";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click_2);
             // 
@@ -125,7 +125,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 5;
-            this.button3.Text = "Hinzufügen";
+            this.button3.Text = "Add slot";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
@@ -152,7 +152,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 7;
-            this.button5.Text = "Löschen";
+            this.button5.Text = "Delete slot";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -161,9 +161,9 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(375, 338);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(247, 17);
+            this.checkBox1.Size = new System.Drawing.Size(250, 17);
             this.checkBox1.TabIndex = 8;
-            this.checkBox1.Text = "Synchronisation beim Windows-Start aktivieren";
+            this.checkBox1.Text = "Starting synchronizing when Windows is started";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
@@ -178,11 +178,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(151, 338);
+            this.label2.Location = new System.Drawing.Point(136, 339);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 13);
+            this.label2.Size = new System.Drawing.Size(127, 13);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Thread-Interval ( in ms ):";
+            this.label2.Text = "Thread-Sleeping ( in ms ):";
             // 
             // Form1
             // 

@@ -25,7 +25,7 @@ namespace SyncTool
         {
             comboBox1.SelectedIndex = 1;
             notifyIcon1.Visible = true;
-            notifyIcon1.Text = "Paul's Syncer";
+            notifyIcon1.Text = "SyncTool";
             notifyIcon1.Icon = this.Icon;
 
             if (File.Exists(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "winstart.ppst")))
@@ -156,7 +156,7 @@ namespace SyncTool
             {
                 foreach (ListViewItem lvi in listView1.Items)
                 {
-                    if (lvi.SubItems[0].Text == "Ordner")
+                    if (lvi.SubItems[0].Text == "Folder")
                     {
                         SyncFolderObject s = new SyncFolderObject();
                         s.f1 = lvi.SubItems[1].Text;
@@ -176,8 +176,8 @@ namespace SyncTool
                     }
                 }
 
-                notifyIcon1.BalloonTipTitle = "Paul's Syncer";
-                notifyIcon1.BalloonTipText = "Die angegebenen Ordner und Dateien werden jetzt automatisch synchronisiert! Die Anwendung wurde minimiert!";
+                notifyIcon1.BalloonTipTitle = "SyncTool";
+                notifyIcon1.BalloonTipText = "Synchronizing started!";
                 notifyIcon1.ShowBalloonTip(1000);
                 button4.Text = "Stop Service";
                 this.Hide();
