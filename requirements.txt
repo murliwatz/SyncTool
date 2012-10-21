@@ -1,0 +1,10 @@
+###############################################
+#                                             #
+# Following system reqirements are needed:    #
+#                                             #
+#                                             #
+# ->  Windows XP, Vista, 7, 8                 #
+#                                             #
+# ->  Microsoft .NET Framework 3.5            #
+#                                             #
+###############################################
