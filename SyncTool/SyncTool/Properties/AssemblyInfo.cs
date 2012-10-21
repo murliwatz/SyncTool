@@ -6,9 +6,9 @@ using System.Runtime.InteropServices;
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die mit einer Assembly verknüpft sind.
 [assembly: AssemblyTitle("SyncTool")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Auto-synchronization file/folder tool")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Paul Pröll")]
 [assembly: AssemblyProduct("SyncTool")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
