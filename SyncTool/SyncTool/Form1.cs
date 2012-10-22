@@ -61,7 +61,7 @@ namespace SyncTool
             if (Environment.GetCommandLineArgs().ToList<string>().Contains("/silent"))
             {
                 if (!checkBox1.Checked)
-                    Application.Exit();
+                    Application.ExitThread();
                 foreach (ListViewItem lvi in listView1.Items)
                 {
                     if (lvi.SubItems[0].Text == "Folder")
@@ -87,6 +87,7 @@ namespace SyncTool
                 this.Opacity = 0;
                 this.ShowInTaskbar = false;
             }
+            timer1.Start();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -267,6 +268,14 @@ namespace SyncTool
             {
                 File.CreateText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "winstart.ppst")).Close();
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (listView1.SelectedItems.Count == 0)
+                button5.Enabled = false;
+            else
+                button5.Enabled = true;
         }
     }
 }
