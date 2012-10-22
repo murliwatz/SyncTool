@@ -25,7 +25,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
     <ROW Component="AI_ExePath" ComponentId="{334B7EAE-A430-4EA7-84E1-FC87942A1D1E}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
-    <ROW Component="SyncTool" ComponentId="{807EDBD8-D782-4889-BB3C-E70686104A2B}" Directory_="APPDIR" Attributes="4" KeyPath="SyncTool"/>
+    <ROW Component="SyncTool" ComponentId="{34FACBDF-6811-4167-BE49-8B0B2E9C20FD}" Directory_="APPDIR" Attributes="4" KeyPath="SyncTool"/>
     <ROW Component="SyncTool.exe" ComponentId="{0433D5DD-BD97-4394-BC85-4C664299145D}" Directory_="APPDIR" Attributes="0" KeyPath="SyncTool.exe"/>
     <ROW Component="SyncTool.vshost.exe" ComponentId="{87A49136-F85F-47F9-B8FD-2E67A4F7E47A}" Directory_="APPDIR" Attributes="0" KeyPath="SyncTool.vshost.exe"/>
     <ROW Component="silent.bat" ComponentId="{ECEF025B-F0C1-4D3C-8A18-AA010D22DAC4}" Directory_="APPDIR" Attributes="0" KeyPath="silent.bat" Type="0"/>
@@ -168,7 +168,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
     <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
-    <ROW Registry="SyncTool" Root="0" Key="Software\Run" Name="SyncTool" Value="&quot;[#SyncTool.exe]&quot; /silent" Component_="SyncTool"/>
+    <ROW Registry="SyncTool" Root="0" Key="Software\Microsoft\Windows\CurrentVersion\Run" Name="SyncTool" Value="&quot;[#SyncTool.exe]&quot; /silent" Component_="SyncTool"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
     <ROW Shortcut="SyncTool.exe" Directory_="SHORTCUTDIR" Name="SyncTool" Component_="SyncTool.exe" Target="[#SyncTool.exe]" Description="SyncTool.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
