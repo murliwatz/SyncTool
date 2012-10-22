@@ -140,7 +140,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
     <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
-    <ROW Registry="SyncTool" Root="1" Key="Software\Run" Name="SyncTool" Value="[#SyncTool.exe] \silent" Component_="SyncTool"/>
+    <ROW Registry="SyncTool" Root="1" Key="Software\Run" Name="SyncTool" Value="&quot;[#SyncTool.exe]&quot; /silent" Component_="SyncTool"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
     <ROW Shortcut="SyncTool.exe" Directory_="SHORTCUTDIR" Name="SyncTool" Component_="SyncTool.exe" Target="[#SyncTool.exe]" Description="SyncTool.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
