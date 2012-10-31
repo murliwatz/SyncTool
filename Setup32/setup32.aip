@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<DOCUMENT Type="Advanced Installer" CreateVersion="8.3" version="8.3" Modules="professional" RootPath="." Language="en" ExactProjectType="netapp" Id="{0AAA3096-3CE1-4FE9-801E-9EFF89355AB7}">
+<DOCUMENT Type="Advanced Installer" CreateVersion="8.3" version="8.3" Modules="professional" RootPath="." Language="en" ExactProjectType="netapp" Id="{346A26E9-7ECA-41A2-92B4-E7ECFEDA8BA7}">
   <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
     <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
-    <ROW Property="AI_MINDOTNETVERSION" MultiBuildValue="DefaultBuild:2.0" ValueLocId="-"/>
+    <ROW Property="AI_MINDOTNETVERSION" MultiBuildValue="DefaultBuild:3.5" ValueLocId="-"/>
     <ROW Property="AI_ThemeStyle" Value="default" MultiBuildValue="DefaultBuild:style4" MsiKey="AI_ThemeStyle"/>
     <ROW Property="ALLUSERS" Value="2"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
     <ROW Property="Manufacturer" Value="Paul Pröll" ValueLocId="*"/>
-    <ROW Property="ProductCode" Value="1033:{15234FFF-DAA1-414C-9CFE-E4DF2729FB33} " Type="16"/>
+    <ROW Property="ProductCode" Value="1033:{7765C986-DB21-44CF-874E-7EA08F1AE702} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
     <ROW Property="ProductName" Value="SyncTool" ValueLocId="*"/>
     <ROW Property="ProductVersion" Value="1.0.0"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
-    <ROW Property="UpgradeCode" Value="{4695674E-D821-496E-B8AD-63C087859D7C}"/>
+    <ROW Property="UpgradeCode" Value="{48B53EF8-20CF-4203-97D5-B3413D283FAF}"/>
     <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
     <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
   </COMPONENT>
@@ -24,11 +24,11 @@
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
-    <ROW Component="AI_ExePath" ComponentId="{334B7EAE-A430-4EA7-84E1-FC87942A1D1E}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
-    <ROW Component="SyncTool" ComponentId="{34FACBDF-6811-4167-BE49-8B0B2E9C20FD}" Directory_="APPDIR" Attributes="4" KeyPath="SyncTool"/>
-    <ROW Component="SyncTool.exe" ComponentId="{0433D5DD-BD97-4394-BC85-4C664299145D}" Directory_="APPDIR" Attributes="0" KeyPath="SyncTool.exe"/>
-    <ROW Component="SyncTool.vshost.exe" ComponentId="{87A49136-F85F-47F9-B8FD-2E67A4F7E47A}" Directory_="APPDIR" Attributes="0" KeyPath="SyncTool.vshost.exe"/>
-    <ROW Component="silent.bat" ComponentId="{ECEF025B-F0C1-4D3C-8A18-AA010D22DAC4}" Directory_="APPDIR" Attributes="0" KeyPath="silent.bat" Type="0"/>
+    <ROW Component="AI_ExePath" ComponentId="{2CD74CEE-A442-4F39-B9C5-547A6E0F4C0E}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="SyncTool" ComponentId="{B3301A08-7AD4-4395-AEC8-2319C3EED385}" Directory_="APPDIR" Attributes="4" KeyPath="SyncTool"/>
+    <ROW Component="SyncTool.exe" ComponentId="{13D42AFC-702A-42A4-ABD9-4E3BF267FEB7}" Directory_="APPDIR" Attributes="0" KeyPath="SyncTool.exe"/>
+    <ROW Component="SyncTool.vshost.exe" ComponentId="{709644A8-D96C-4DC3-BC8F-C639AC9AECC3}" Directory_="APPDIR" Attributes="0" KeyPath="SyncTool.vshost.exe"/>
+    <ROW Component="silent.bat" ComponentId="{53D8B8A4-8421-4CDA-961C-16C6B8D8BF30}" Directory_="APPDIR" Attributes="0" KeyPath="silent.bat" Type="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
     <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AI_ExePath SyncTool SyncTool.exe SyncTool.vshost.exe silent.bat"/>
@@ -65,8 +65,6 @@
     <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
-    <ROW Property="AI_DOTNET20_SEARCH" Signature_="AI_DotNet20SearchSgn" Builds="DefaultBuild"/>
-    <ROW Property="AI_DOTNET30_SEARCH" Signature_="AI_DotNet30SearchSgn" Builds="DefaultBuild"/>
     <ROW Property="AI_DOTNET35_CLIENTPROFILE_SEARCH" Signature_="AI_DotNet35ClientProfileSearchSgn" Builds="DefaultBuild"/>
     <ROW Property="AI_DOTNET35_SEARCH" Signature_="AI_DotNet35SearchSgn" Builds="DefaultBuild"/>
     <ROW Property="AI_DOTNET40_CLIENTPROFILE_SEARCH" Signature_="AI_DotNet40ClientProfileSearchSgn" Builds="DefaultBuild"/>
@@ -76,20 +74,15 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiAssemblyComponent">
     <ROW Component_="SyncTool.exe" Feature_="MainFeature" File_Application="SyncTool.exe" Attributes="0"/>
-    <ROW Component_="SyncTool.vshost.exe" Feature_="MainFeature" Attributes="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiAssemblyNameComponent">
     <ROW Component_="SyncTool.exe" Name="Name" Value="SyncTool" Sync="false"/>
     <ROW Component_="SyncTool.exe" Name="Culture" Value="neutral" Sync="false"/>
     <ROW Component_="SyncTool.exe" Name="Version" Value="1.0.0.0" Sync="false"/>
     <ROW Component_="SyncTool.exe" Name="ProcessorArchitecture" Value="X86" Sync="false"/>
-    <ROW Component_="SyncTool.vshost.exe" Name="Name" Value="vshost32-clr2" Sync="false"/>
-    <ROW Component_="SyncTool.vshost.exe" Name="Culture" Value="neutral" Sync="false"/>
-    <ROW Component_="SyncTool.vshost.exe" Name="Version" Value="10.0.0.0" Sync="false"/>
-    <ROW Component_="SyncTool.vshost.exe" Name="PublicKeyToken" Value="b03f5f7f11d50a3a" Sync="false"/>
-    <ROW Component_="SyncTool.vshost.exe" Name="ProcessorArchitecture" Value="X86" Sync="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
     <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
     <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
   </COMPONENT>
@@ -115,6 +108,7 @@
     <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AppSearchEx" Type="1" Source="Prereq.dll" Target="DoAppSearchEx"/>
     <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
     <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
     <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
@@ -127,7 +121,7 @@
     <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
     <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
     <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
-    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFilesFolder]\[ProductName]"/>
     <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
     <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
   </COMPONENT>
@@ -147,18 +141,18 @@
     <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
     <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
     <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
     <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
     <ROW Action="AI_ResolveKnownFolders" Sequence="51"/>
+    <ROW Action="AI_AppSearchEx" Sequence="101"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
-    <ROW Condition="(AI_DOTNET20_SEARCH = &quot;#1&quot;) OR (AI_DOTNET30_SEARCH = &quot;#1&quot;) OR (AI_DOTNET35_SEARCH = &quot;#1&quot;) OR (AI_DOTNET35_CLIENTPROFILE_SEARCH = &quot;#1&quot;) OR (AI_DOTNET40_CLIENTPROFILE_SEARCH = &quot;#1&quot;) OR (AI_DOTNET40_SEARCH = &quot;#1&quot;) OR (AI_DOTNET40_CLIENTPROFILE_SEARCH = &quot;#1&quot;) OR (AI_DOTNET40_SEARCH = &quot;#1&quot;)" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_MINDOTNETVERSION]" DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(AI_DOTNET35_SEARCH = &quot;#1&quot;) OR (AI_DOTNET35_CLIENTPROFILE_SEARCH = &quot;#1&quot;) OR (AI_DOTNET40_CLIENTPROFILE_SEARCH = &quot;#1&quot;) OR (AI_DOTNET40_SEARCH = &quot;#1&quot;)" Description="[ProductName] cannot be installed on systems with .NET Framework version lower than [AI_MINDOTNETVERSION]" DescriptionLocId="AI.LaunchCondition.DotNET" IsPredefined="true" Builds="DefaultBuild"/>
     <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]" DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
-    <ROW Signature_="AI_DotNet20SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v2.0.50727" Name="Install" Type="2"/>
-    <ROW Signature_="AI_DotNet30SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0\Setup" Name="InstallSuccess" Type="2"/>
     <ROW Signature_="AI_DotNet35ClientProfileSearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\DotNetClient\v3.5" Name="Install" Type="2"/>
     <ROW Signature_="AI_DotNet35SearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5" Name="Install" Type="2"/>
     <ROW Signature_="AI_DotNet40ClientProfileSearchSgn" Root="2" Key="SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client" Name="Install" Type="2"/>
@@ -168,7 +162,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
     <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
-    <ROW Registry="SyncTool" Root="0" Key="Software\Microsoft\Windows\CurrentVersion\Run" Name="SyncTool" Value="&quot;[#SyncTool.exe]&quot; /silent" Component_="SyncTool"/>
+    <ROW Registry="SyncTool" Root="1" Key="Software\Microsoft\Windows\CurrentVersion\Run" Name="SyncTool" Value="&quot;[#SyncTool.exe]&quot; /silent" Component_="SyncTool"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
     <ROW Shortcut="SyncTool.exe" Directory_="SHORTCUTDIR" Name="SyncTool" Component_="SyncTool.exe" Target="[#SyncTool.exe]" Description="SyncTool.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
@@ -182,7 +176,17 @@
     <ROW UpgradeCode="[|UpgradeCode]" VersionMax="[|ProductVersion]" Attributes="1025" ActionProperty="OLDPRODUCTS"/>
     <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
   </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+    <ROW PrereqKey="F4_28D6_4E08_8648_3469A5B0C76D" DisplayName=".NET Framework 3.5" VersionMin="3.5" SetupFileUrl="http://download.microsoft.com/download/7/0/3/703455ee-a747-4cc8-bd3e-98a615c3aedb/dotNetFx35setup.exe" Location="1" ExactSize="0" Win9xVersions="Windows 9x/ME" WinNTVersions="Windows NT 4.0, Windows NT 4.0 Service Pack 1, Windows NT 4.0 Service Pack 2, Windows NT 4.0 Service Pack 3, Windows NT 4.0 Service Pack 4, Windows NT 4.0 Service Pack 5, Windows NT 4.0 Service Pack 6, Windows 2000, Windows 2000 Service Pack 1, Windows 2000 Service Pack 2, Windows 2000 Service Pack 3, Windows 2000 Service Pack 4, Windows XP x86, Windows XP x86 Service Pack 1" Operator="1"/>
+    <ATTRIBUTE name="PrereqsOrder" value="F4_28D6_4E08_8648_3469A5B0C76D"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqSearchComponent">
+    <ROW SearchKey="F4_28D6_4E08_8648_3469A5B0C76D_NET_35_SEARCH" Prereq="F4_28D6_4E08_8648_3469A5B0C76D" SearchType="9" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5\Install" RefContent="M1" Order="1" Property="AI_NET_35_PREREQSEARCH_PROP"/>
+    <ROW SearchKey="F4_28D6_4E08_8648_3469A5B0C76D_NET_35_WIN_SEARCH" Prereq="F4_28D6_4E08_8648_3469A5B0C76D" SearchType="9" SearchString="HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\CurrentBuildNumber" RefContent="G6002" Order="2" Property="AI_NET_35_WIN_PREREQSEARCH_PROP"/>
+    <ROW SearchKey="F4_28D6_4E08_8648_3469A5B0C76D_NET_40_CP_SEARCH" Prereq="F4_28D6_4E08_8648_3469A5B0C76D" SearchType="9" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client\Install" RefContent="M1" Order="3" Property="AI_NET_35_40_CP_PREREQSEARCH_PROP"/>
+    <ROW SearchKey="F4_28D6_4E08_8648_3469A5B0C76D_NET_40_SEARCH" Prereq="F4_28D6_4E08_8648_3469A5B0C76D" SearchType="9" SearchString="HKLM\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\Install" RefContent="M1" Order="4" Property="AI_NET_35_40_PREREQSEARCH_PROP"/>
+  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.SynchronizedFolderComponent">
-    <ROW Directory_="APPDIR" SourcePath="..\SyncTool\SyncTool\bin\Release" Feature="MainFeature" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
+    <ROW Directory_="APPDIR" SourcePath="..\SyncTool\SyncTool\bin\Release" ExcludePattern="*~|#*#|%*%|._|CVS|.cvsignore|SCCS|vssver.scc|mssccprj.scc|vssver2.scc|.svn|.DS_Store" ExcludeFlags="6"/>
   </COMPONENT>
 </DOCUMENT>
